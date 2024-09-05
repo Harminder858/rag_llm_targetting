@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3.9.16-slim
 
 WORKDIR /app
 
@@ -7,4 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "src.app:server", "-b", "0.0.0.0:8000"]
+RUN useradd -m myuser
+USER myuser
+
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "src.api.app:server"]
