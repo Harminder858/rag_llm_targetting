@@ -49,6 +49,9 @@ def update_output(user_id):
 # Mount the Dash app
 app.mount("/", WSGIMiddleware(dash_app.server))
 
+# This is needed for Gunicorn to work with Dash
+server = app
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
