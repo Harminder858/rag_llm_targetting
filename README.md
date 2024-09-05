@@ -14,22 +14,22 @@ This project implements a Retrieval-Augmented Generation (RAG) system using a La
 1. Clone the repository:
 git clone https://github.com/your-username/contextual-targeting-rag.git
 cd contextual-targeting-rag
-Copy
+
 2. Install the required packages:
 pip install -r requirements.txt
-Copy
+
 ## Usage
 
 1. Start the application:
 python src/app.py
-Copy
+
 2. Open a web browser and navigate to `http://localhost:8000` to access the dashboard.
 
 ## Testing
 
 Run the tests using:
 python -m unittest discover tests
-Copy
+
 ## Deployment
 
 This project is configured for deployment on Render. Push changes to the `master` branch of the GitHub repository to trigger automatic deployment.
