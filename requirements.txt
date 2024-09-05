@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pandas
+scikit-learn
+torch
+transformers
+redis
+dash
+dash-bootstrap-components
+gunicorn
+numpy
