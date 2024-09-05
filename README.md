@@ -12,10 +12,9 @@ This project implements a Retrieval-Augmented Generation (RAG) system using a La
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/your-username/contextual-targeting-rag.git \n
-cd contextual-targeting-rag
+git clone https://github.com/your-username/contextual-targeting-rag.git >> cd contextual-targeting-rag
 
-2. Install the required packages:
+3. Install the required packages:
 pip install -r requirements.txt
 
 ## Usage
